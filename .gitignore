@@ -1,0 +1,8 @@
+*.dll
+*.lib
+*.exp
+*.exe
+*.pyd
+*.recipe
+__pycache__/
+*.pyc

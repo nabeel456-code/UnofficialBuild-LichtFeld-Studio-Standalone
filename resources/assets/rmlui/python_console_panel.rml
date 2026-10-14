@@ -1,0 +1,78 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="python_console_panel.rcss"/>
+    </head>
+    <body id="window-frame">
+        <div id="content-wrap">
+            <div id="content">
+                <div id="python-console-toolbar">
+                    <div class="toolbar-row">
+                        <button id="new-button" class="toolbar-button btn-new" type="button" data-action="new"></button>
+                        <button id="load-button" class="toolbar-button btn-load" type="button" data-action="load"></button>
+                        <button id="reload-button" class="toolbar-button btn-reload" type="button" data-action="reload"></button>
+                        <button id="save-button" class="toolbar-button btn-save" type="button" data-action="save"></button>
+                        <button id="save-as-button" class="toolbar-button btn-save-as" type="button" data-action="save-as"></button>
+                        <button id="format-button" class="toolbar-button btn-format" type="button" data-action="format"></button>
+                        <button id="vim-button" class="toolbar-button btn-vim" type="button" data-action="toggle-vim"></button>
+                        <button id="run-button" class="toolbar-button btn-run run-button" type="button" data-action="run"></button>
+                        <button id="stop-button" class="toolbar-button btn-stop stop-button" type="button" data-action="stop"></button>
+                        <button id="reset-button" class="toolbar-button btn-reset" type="button" data-action="reset"></button>
+                        <button id="clear-button" class="toolbar-button btn-clear" type="button" data-action="clear"></button>
+                        <span class="toolbar-separator">|</span>
+                        <span id="run-status"></span>
+                        <span id="syntax-status"></span>
+                        <button id="outline-button" type="button" data-action="toggle-outline"></button>
+                        <button id="breadcrumb-button" type="button" data-action="toggle-breadcrumbs"></button>
+                        <button id="fold-button" type="button" data-action="toggle-folds"></button>
+                        <span id="script-label"></span>
+                        <button id="font-status" type="button" data-action="font-reset">100%</button>
+                    </div>
+                </div>
+
+                <div id="menu-layer">
+                    <div id="outline-menu" class="popup-menu"></div>
+                    <div id="breadcrumb-menu" class="popup-menu"></div>
+                    <div id="fold-menu" class="popup-menu"></div>
+                </div>
+
+                <div id="editor-panel">
+                    <python-editor-view id="python-editor-view"/>
+                </div>
+
+                <div id="python-splitter"></div>
+
+                <div id="bottom-panel">
+                    <div id="tabbar">
+                        <button id="tab-output" type="button" data-action="tab-output"></button>
+                        <button id="tab-terminal" type="button" data-action="tab-terminal"></button>
+                        <button id="tab-packages" type="button" data-action="tab-packages"></button>
+                    </div>
+                    <div id="bottom-content">
+                        <div id="output-panel" class="tab-panel">
+                            <terminal-view id="python-output-terminal"/>
+                        </div>
+                        <div id="terminal-panel" class="tab-panel">
+                            <terminal-view id="python-repl-terminal"/>
+                        </div>
+                        <div id="packages-panel" class="tab-panel">
+                            <div id="packages-toolbar">
+                                <button id="packages-refresh" type="button" data-action="packages-refresh"></button>
+                                <input id="packages-search" type="text" placeholder=""/>
+                                <span id="packages-status">(0)</span>
+                            </div>
+                            <div id="packages-table">
+                                <div class="pkg-header">
+                                    <span id="packages-name" class="pkg-name"></span>
+                                    <span id="packages-version" class="pkg-version"></span>
+                                    <span id="packages-path" class="pkg-path"></span>
+                                </div>
+                                <div id="packages-body"></div>
+                            </div>
+                            <div id="packages-empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</rml>

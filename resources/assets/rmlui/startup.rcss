@@ -1,0 +1,147 @@
+div {
+    display: block;
+}
+
+body {
+    font-family: Inter;
+    font-size: 12dp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#overlay-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28dp 40dp;
+    border-radius: 12dp;
+    border-width: 1dp;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+#supported-text {
+    margin-top: 20dp;
+}
+
+#sponsor-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24dp;
+    margin-top: 10dp;
+}
+
+.sponsor-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#social-row {
+    display: flex;
+    align-items: center;
+    gap: 24dp;
+    margin-top: 16dp;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social-link:hover span {
+    text-decoration: underline;
+}
+
+.social-icon {
+    width: 20dp;
+    height: 20dp;
+    margin-right: 6dp;
+}
+
+.heart-icon {
+    image-color: rgb(220, 50, 50);
+}
+
+#lang-row {
+    display: flex;
+    align-items: center;
+    gap: 8dp;
+    margin-top: 14dp;
+}
+
+#lang-select {
+    width: 140dp;
+}
+
+#click-hint {
+    margin-top: 12dp;
+}
+
+#plugin-load-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14dp;
+    width: 360dp;
+    height: 16dp;
+    gap: 8dp;
+}
+
+#plugin-load-track {
+    width: 300dp;
+    height: 14dp;
+    border-width: 1dp;
+    border-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 999dp;
+    overflow: hidden;
+}
+
+#plugin-load-fill {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(85, 171, 255);
+    border-radius: 999dp;
+}
+
+#plugin-load-stage {
+    display: block;
+    width: 286dp;
+    height: 14dp;
+    margin-left: 7dp;
+    margin-top: -14dp;
+    line-height: 14dp;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#plugin-load-percent {
+    display: block;
+    width: 52dp;
+    text-align: right;
+}
+
+select {
+    font-size: 12dp;
+    padding: 2dp 6dp;
+    border-width: 1dp;
+}
+
+selectbox {
+    border-width: 1dp;
+    max-height: 200dp;
+    overflow-y: auto;
+}
+
+selectbox option {
+    padding: 2dp 6dp;
+    font-size: 12dp;
+}

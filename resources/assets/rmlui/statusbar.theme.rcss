@@ -1,0 +1,51 @@
+/* Theme-dependent status bar styles. */
+
+body,
+#progress-text {
+    color: @{text};
+}
+
+.dim,
+.separator {
+    color: @{text_dim};
+}
+
+#progress-container {
+    background-color: @{statusbar.progress_bg};
+}
+
+#progress-fill {
+    background-color: @{primary};
+}
+
+.progress-marker {
+    background-color: @{statusbar.progress_marker};
+}
+
+.progress-marker.is-past {
+    background-color: @{statusbar.progress_marker_past};
+}
+
+.progress-marker.is-hovered,
+.progress-marker.is-preview {
+    background-color: @{statusbar.progress_marker_active};
+}
+
+#account-chip {
+    background-color: @{alpha(surface_bright,0.35)};
+    border-color: @{alpha(text_dim,0.55)};
+}
+
+#account-chip:hover {
+    background-color: @{alpha(surface_bright,0.70)};
+    border-color: @{text_dim};
+}
+
+#account-chip.warning {
+    background-color: @{blend(surface,warning,0.14)};
+    border-color: @{warning};
+}
+
+#gpu-icon {
+    image-color: @{text_dim};
+}
